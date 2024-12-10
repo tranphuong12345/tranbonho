@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tràn bộ nhớ</title>
+    <link rel="stylesheet" href="./bai1.css" />
+  </head>
+
+  <body>
+    <h1>Anh có điều muốn nói!</h1>
+    <audio id="audioElement" loop>
+      <source src="audio/nhoem.mp3" type="audio/mp3" />
+      Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio>
+    <iframe
+      style="border-radius: 12px; position: fixed; bottom: 0"
+      id="spotifyIframe"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+    <button onclick="playAudioAndShowNotifications()">Nhấn đây nè</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
